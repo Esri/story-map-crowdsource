@@ -38,10 +38,18 @@ Once your story is ready, you have to find its ID in ArcGIS Online. The ID is a 
 
 ![App ID](story-map-crowdsource-help-application-id.png)
 
-1. [Download the application](https://links.esri.com/storymaps/story_map_crowdsource_zip)
-2. Deploy the application on your webserver. See [FAQ](#how-to-deploy-the-application-on-a-web-server) for details
-3. Edit index.html, find the configuration section on line 24 and paste in your application ID
-4. Navigate to index.html (e.g., `https://www.example.org/StoryMapCrowdsource/index.html`)
+1. [Download and uncompress the application](https://links.esri.com/storymaps/story_map_crowdsource_zip)
+2. Open the console/terminal, go to the uncompressed folder and:
+
+  2.1 Run ```$ npm install``` ([Node.js required](https://nodejs.org/en/)) <- Install npm dependencies
+  
+  2.2 Run ```$ bower install``` ([Bower required](https://bower.io/)) <- bower dependencies
+  
+  2.3 Run ```$ grunt build``` ([Grunt required](http://gruntjs.com/)) <- Generate the distribution files 
+  
+3. Now you are ready to deploy the application on your webserver (your application is located inside the **dist** folder). See [FAQ](#how-to-deploy-the-application-on-a-web-server) for details
+4. Edit index.html, find the configuration section on line 24 and paste in your application ID
+5. Navigate to index.html (e.g., `https://www.example.org/StoryMapCrowdsource/index.html`) <- **Important**: The webserver you use must serve the application over "https".
 
 Enjoy!
 You can continue to use the builder in ArcGIS Online to modify your story.
