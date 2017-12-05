@@ -455,7 +455,7 @@ module.exports = function (grunt) {
     'concatFontStyle',
     'swig:dev',
     'babelAndAppend',
-    'sass:dev',
+    'sass',
     'open:dev',
     'concurrent:devWatch'
   ]);
