@@ -459,7 +459,7 @@ module.exports = function (grunt) {
     'concatFontStyle',
     'ejsTemplateDev',
     'babelAndAppend',
-    'sass:dev',
+    'sass',
     'open:dev',
     'concurrent:devWatch'
   ]);
